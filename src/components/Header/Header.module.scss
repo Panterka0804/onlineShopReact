@@ -5,6 +5,25 @@ header{
         font-weight: 800;
         font-size: 26px;
     }
+
+    .nav{
+        float: right;
+        list-style: none;
+
+        li{
+            display: inline;
+            margin-left: 25px;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 600;
+            transition: opacity 500ms ease;
+        }
+
+        li:hover{
+            opacity: 0.3;
+        }
+    }
+
     .presentation{
         margin: 50px 0;
         background: url(./../../assets/bunner.jpg) no-repeat;
@@ -15,24 +34,25 @@ header{
         background-blend-mode: multiply;
         background-color: rgba(247, 99, 197, 0.456);
         position: relative;
+        border-radius: 15px;
     }
 
     .presentation::after{
-        content: 'Описание магазина, какой-то текст-презентация';
-        color: rgb(0, 140, 140);
+        content: 'Мыло для души и тела';
+        color: rgb(11, 177, 177);
         position: absolute;
-        top: 300px;
+        top: 350px;
         left: 170px;
         width: 500px;
         font-size: 40px;
     }
     .presentation::before{
-        content: 'Что-то еще';
-        color: rgb(0, 140, 140);
+        content: 'Сделано с любовью!';
+        color: rgb(105, 20, 87);
         position: absolute;
-        top: 50px;
-        left: 680px;
+        top: 40px;
+        left: 530px;
         width: 500px;
-        font-size: 20px;
+        font-size: 30px;
     }
 }
