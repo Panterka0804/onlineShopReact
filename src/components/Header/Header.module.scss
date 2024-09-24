@@ -1,4 +1,5 @@
 header{
+    position: relative;
 
 
     .logo{
@@ -17,11 +18,41 @@ header{
             font-size: 20px;
             font-weight: 600;
             transition: opacity 500ms ease;
-        }
+        
 
-        li:hover{
-            opacity: 0.3;
+            &:hover{
+                opacity: 0.3;
+            }
         }
+    }
+
+    .shopCartButton{
+        float: right;
+        cursor: pointer;
+        font-size: 25px;
+        transition: color, transform 500ms ease;
+
+
+    
+        &:hover,
+        &.active {
+            color: rgba(242, 0, 157, 0.636);
+            transform: scale(1.5);
+        }
+    }
+
+    .shopCart{
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 450px;
+        min-height: 100px;
+        background: #fb00fff5;
+        -webkit-box-shadow: -18px 16px 32px 10px rgba(255, 0, 202, 0.5);
+        -moz-box-shadow: -18px 16px 32px 10px rgba(255, 0, 202, 0.5);
+        box-shadow: -18px 16px 32px 10px rgba(255, 0, 202, 0.5);
+        z-index: 1000;
+
     }
 
     .presentation{
@@ -35,24 +66,27 @@ header{
         background-color: rgba(247, 99, 197, 0.456);
         position: relative;
         border-radius: 15px;
-    }
+    
 
-    .presentation::after{
-        content: 'Мыло для души и тела';
-        color: rgb(11, 177, 177);
-        position: absolute;
-        top: 350px;
-        left: 170px;
-        width: 500px;
-        font-size: 40px;
-    }
-    .presentation::before{
-        content: 'Сделано с любовью!';
-        color: rgb(105, 20, 87);
-        position: absolute;
-        top: 40px;
-        left: 530px;
-        width: 500px;
-        font-size: 30px;
+        &::after{
+            content: 'Мыло для души и тела';
+            color: rgb(11, 177, 177);
+            position: absolute;
+            top: 350px;
+            left: 170px;
+            width: 500px;
+            font-size: 40px;
+        }
+    
+        &::before{
+            content: 'Сделано с любовью!';
+            color: rgb(105, 20, 87);
+            position: absolute;
+            top: 40px;
+            left: 530px;
+            width: 500px;
+            font-size: 30px;
+        }
     }
 }
+
