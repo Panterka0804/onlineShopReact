@@ -1,6 +1,20 @@
 header{
     position: relative;
 
+    .empty{
+        h2{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .summa{
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
 
     .logo{
         font-weight: 800;
@@ -47,11 +61,16 @@ header{
         right: 0;
         width: 450px;
         min-height: 100px;
-        background: #fb00fff5;
-        -webkit-box-shadow: -18px 16px 32px 10px rgba(255, 0, 202, 0.5);
-        -moz-box-shadow: -18px 16px 32px 10px rgba(255, 0, 202, 0.5);
-        box-shadow: -18px 16px 32px 10px rgba(255, 0, 202, 0.5);
+        background: rgba(0, 0, 255, 0.829);
+        border-radius: 25px;
+        -webkit-box-shadow: -40px 35px 18px 6px rgba(0, 51, 255, 0.26);
+        -moz-box-shadow: -40px 35px 18px 6px rgba(0, 51, 255, 0.26);
+        box-shadow: -40px 35px 18px 6px rgba(0, 51, 255, 0.26);
         z-index: 1000;
+        padding: 20px;
+        padding-bottom: 0;
+
+        
 
     }
 
