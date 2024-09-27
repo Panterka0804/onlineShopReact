@@ -1,0 +1,23 @@
+.categories{
+    text-align: center;
+    
+
+    div{
+        display: inline-block;
+        background: blue;
+        border-radius: 15px;
+        padding: 10px 15px;
+        margin-bottom: 25px;
+        margin-right: 10px;
+        cursor: pointer;
+        border: 3px solid transparent;
+        transition: all 500ms ease;
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover{
+            border-color: deeppink;
+            transform: scale(1.1);
+        }
+    }
+}
