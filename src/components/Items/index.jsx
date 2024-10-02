@@ -1,12 +1,16 @@
 import React from "react";
 import Item from "../Item";
 import styles from "./Items.module.scss";
+import { useAppContext } from "../../useAppContext";
 
-export default function Items(props){
+export default function Items(){
+
+const {currentItems} = useAppContext();
+
     return(
         <main>
-            {props.allItems.map(el=>(
-                <Item key={el.id} item={el} onShowItem={props.onShowItem} onAdd={props.onAdd}/>
+            {currentItems.map(el=>(
+                <Item key={el.id} item={el} />
             ))}
         </main>
     );
