@@ -1,6 +1,7 @@
 import React from "react";
 import Item from "../Item/index.tsx";
-import styles from "./Items.module.scss";
+import styles from "./Items.module.scss"
+
 import { useAppContext } from "./../../useAppContext.tsx";
 
 const Items:React.FC=()=>{
